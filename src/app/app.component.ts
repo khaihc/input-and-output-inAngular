@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  /*
+   *input: từ cha truyền cho thg con
+   *ouput: từ con đẩy sự kiên lên thg cha, để thg cha quản lý sự kiện
+   */
   title = 'inputAndOuput';
 
   //Truyền từ cha xuống con
