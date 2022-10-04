@@ -3,16 +3,17 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChildConLenChaComponent } from './child-con-len-cha/child-con-len-cha.component';
+import { ChildChaXuongConComponent } from './child-cha-xuong-con/child-cha-xuong-con.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildConLenChaComponent,
+    ChildChaXuongConComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
