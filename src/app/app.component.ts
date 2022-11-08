@@ -26,4 +26,18 @@ export class AppComponent {
   countChangedHandle(count: number) {
     this.countParent = count;
   }
+
+
+  //<h1>parent component -> Child component (@input decorater)</h1>
+  message="parent component -> Child component (@input decorater)"
+
+
+  //<h1>Child component -> parent component (@output decorater and EventEmitter)</h1>
+  messageParent: string = '';
+  receiveMessage($event:any){
+    this.messageParent = $event;
+  }
+
+
+
 }

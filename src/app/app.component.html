@@ -23,3 +23,17 @@
   Current count is (Child chuyển từ con lên cha): {{child.count}}
 
 </div>
+
+
+<div class="conLenCha">
+  <app-test-child2 [data]="message"></app-test-child2>
+</div>
+<div class="conLenCha">
+  <div>122: {{messageParent}}</div>
+  <app-test-child (event)="receiveMessage($event)"></app-test-child>
+</div>
+
+<div class="conLenCha">
+  <app-any-to-any></app-any-to-any>
+  <app-any-to-any2></app-any-to-any2>
+</div>
